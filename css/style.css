@@ -18,18 +18,28 @@ a {
 
 /* ******************************************* */
 
+/* UTILITIES */
+
+/* COLORI */
+
+/* Testi: #A3A3A3
+Background main: #141922
+Footer: #282828 */
+
+
 
 body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
     display: flex;
+    color: #A3A3A3;
 }
 
 
 #sidebar {
     width: 15%;
     height: calc(100vh - 100px);
-    background-color: lightcoral;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +53,7 @@ body {
 
 #spotify-main {
     height: 100vh;
-    background-color: lightblue;
+    background-color: #141922;
     padding-top: 80px;
 }
 
@@ -60,6 +70,7 @@ body {
 
 #general-footer {
     height: 100px;
+    width: 100vw;
     background-color: grey;
     position: fixed;
     bottom: 0;
