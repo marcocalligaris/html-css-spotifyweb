@@ -95,7 +95,6 @@ body {
 
 .side-top a:hover {
     color: #fff;
-    font-weight: 500;
 }
 
 .side-bottom {
@@ -326,8 +325,6 @@ body {
     background-color: yellow;
 }
 
-
-
 .pl-container {
     width: 100%;
     margin-bottom: 50px;
@@ -342,10 +339,6 @@ body {
     margin-bottom: 10px;
 }
 
-.list-title p {
-
-}
-
 .playlist {
     display: flex;
     justify-content: flex-start;
@@ -353,13 +346,10 @@ body {
 }
 
 .playlist .column {
+    position: relative;
     margin-right: 10px;
     width: calc(100% / 2 - 10px);
-}
-
-.playlist .column .card {
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .playlist .card img {
@@ -367,14 +357,24 @@ body {
     margin-bottom: 20px;
 }
 
-.playlist .card h4 {
+.playlist .column h4 {
     margin-bottom: 10px;
     color: white;
     font-size: 15px;
 }
 
-.playlist .card p {
+.playlist .column p {
     font-size: 12px;
+}
+
+.playlist .column:hover .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .playlist .rounded {
@@ -504,6 +504,8 @@ body {
 }
 
 .grey-bar, .white-bar {
+    cursor: pointer;
+    line-height: 1rem;
     height: 3px;
     border-radius: 2px;
 }
@@ -514,8 +516,8 @@ body {
 }
 
 .white-bar {
-    background-color: #fff;
     width: 25%;
+    background-color: #fff;
 }
 
 .white-bar#progress-value {
@@ -525,7 +527,8 @@ body {
 .hover-progress {
     width: 100%;
     height: 100%;
-    background-color: lightgreen;
+    border-radius: 2px;
+    background-color: #C5F86E;
     display: none;
 }
 
@@ -542,7 +545,6 @@ body {
 
 .ft-center-btm:hover .hover-progress {
     display: block;
-    cursor: pointer;
 }
 
 #ft-right {
