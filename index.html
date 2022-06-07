@@ -23,6 +23,7 @@
                     <a href="#"><i class="fa-brands fa-spotify fa-2x"></i></a>
                     <ul>
                         <li>
+                            <div></div>
                             <a href="#"><img src="img/home.svg" alt="Home"></a>
                         </li>
                         <li>
@@ -58,6 +59,7 @@
                     </div>
                     <ul>
                         <li>
+                            <div class="y-border"></div>
                             <a href="#"><img src="img/home.svg" alt="Home"> Home</a>
                         </li>
                         <li>
@@ -68,10 +70,12 @@
                         </li>
                     </ul>
                     <h3>PLAYLIST</h3>
-                    <div class="add-playlist">
-                        <a href="#"><i class="fa-solid fa-plus"></i></a>
-                        <span> Crea Playlist</span>
-                    </div>
+                    <a href="#">
+                        <div class="add-playlist">
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Crea Playlist</span>
+                        </div>
+                    </a>
                     <div id="pl-list-container">
                         <div class="my-playlists">
                             <ul>
@@ -101,10 +105,12 @@
                     </div>
                 </div>
                 <div class="side-bottom">
-                    <div class="download">
-                        <a href="#"><img src="img/download.svg" alt="Installa app" class="app-download"></a>
-                        <p><b>Installa app</b></p>
-                    </div>
+                    <a href="#" class="download">
+                        <div>
+                            <img src="img/download.svg" alt="Installa app" class="app-download">
+                            <p><b>Installa app</b></p>
+                        </div>
+                    </a>
                     <div class="profile">
                         <a href="#"><img src="img/profile.svg" alt="Profilo utente" class="user-profile"> John Doe</a>
                     </div>
@@ -119,7 +125,7 @@
 
         <main id="spotify-main">
             <header id="main-header">
-                <div><a href="#" class="button">EFFETTUA L'UPGRADE</a></div>
+                <a href="#" class="button">EFFETTUA L'UPGRADE</a>
             </header>
 
             <!-- Contenuti musicali -->
@@ -130,7 +136,10 @@
 
                 <nav class="navbar-container">
                     <ul id="top-navbar">
-                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li>
+                            <a href="#">IN EVIDENZA</a>
+                            <div class="y-border"></div>
+                        </li>
                         <li><a href="#">PODCAST</a></li>
                         <li><a href="#">CLASSIFICHE</a></li>
                         <li><a href="#">GENERI E MOOD</a></li>
